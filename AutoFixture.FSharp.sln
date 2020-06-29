@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Tests", "Tests\AutoFixture.Extensions.FSharp.Tests\AutoFixture.Extensions.FSharp.Tests.fsproj", "{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19D15003-520B-46A5-A052-616A68B42523}"
+ProjectSection(SolutionItems) = preProject
+	Tests\Directory.Build.props = Tests\Directory.Build.props
+EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Src", "Src", "{580D1A6C-002D-4BAD-B967-322CB586D6D3}"
+ProjectSection(SolutionItems) = preProject
+	Src\Directory.Build.props = Src\Directory.Build.props
+EndProjectSection
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Xunit.Tests", "Tests\AutoFixture.Extensions.FSharp.Xunit.Tests\AutoFixture.Extensions.FSharp.Xunit.Tests.fsproj", "{922DD3A6-77D2-4E1C-A498-6B5995375C67}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp", "Src\AutoFixture.Extensions.FSharp\AutoFixture.Extensions.FSharp.fsproj", "{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Xunit", "Src\AutoFixture.Extensions.FSharp.Xunit\AutoFixture.Extensions.FSharp.Xunit.fsproj", "{D94241F0-E831-4165-BB5C-EA1114BF20A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{922DD3A6-77D2-4E1C-A498-6B5995375C67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{922DD3A6-77D2-4E1C-A498-6B5995375C67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{922DD3A6-77D2-4E1C-A498-6B5995375C67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{922DD3A6-77D2-4E1C-A498-6B5995375C67}.Release|Any CPU.Build.0 = Release|Any CPU
+		{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D94241F0-E831-4165-BB5C-EA1114BF20A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D94241F0-E831-4165-BB5C-EA1114BF20A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D94241F0-E831-4165-BB5C-EA1114BF20A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D94241F0-E831-4165-BB5C-EA1114BF20A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{D21483A3-A76E-4E01-9065-0B39CB4BEEFD} = {19D15003-520B-46A5-A052-616A68B42523}
+		{922DD3A6-77D2-4E1C-A498-6B5995375C67} = {19D15003-520B-46A5-A052-616A68B42523}
+		{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D} = {580D1A6C-002D-4BAD-B967-322CB586D6D3}
+		{D94241F0-E831-4165-BB5C-EA1114BF20A5} = {580D1A6C-002D-4BAD-B967-322CB586D6D3}
+	EndGlobalSection
+EndGlobal

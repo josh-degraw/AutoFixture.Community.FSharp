@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <PackageId>AutoFixture.Extensions.FSharp</PackageId>
+        <AssemblyName>AutoFixture.Extensions.FSharp</AssemblyName>
+        <Description>Helpful extensions to AutoFixture to handle some F#-specific types.</Description>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <Compile Include="Utils.fs" />
+        <Compile Include="Library.fs" />
+    </ItemGroup>   
+
+</Project>
