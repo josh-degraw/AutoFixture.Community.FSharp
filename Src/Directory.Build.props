@@ -15,7 +15,7 @@
     </PropertyGroup>
     
     <PropertyGroup>
-        <Version>1.0.0-rc</Version>
+        <Version>1.0.0-rc1</Version>
         <TargetFramework>netstandard2.0</TargetFramework>
         <Authors>Josh DeGraw</Authors>        
         <Copyright>© 2020</Copyright>

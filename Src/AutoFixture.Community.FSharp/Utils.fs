@@ -1,5 +1,5 @@
 ﻿[<AutoOpen>]
-module AutoFixture.Community.Utils
+module internal AutoFixture.Community.Utils
 
 open System
 open System.Reflection
@@ -7,7 +7,7 @@ open AutoFixture.Kernel
 open FSharp.Reflection
 
 [<Sealed>]
-type ReflectiveList =
+type internal ReflectiveList =
 
     static member Build<'a>(args: obj list) =
         [ for a in args do

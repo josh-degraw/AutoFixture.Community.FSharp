@@ -16,10 +16,10 @@ type FSharpSpecimenBuilder(fixture: IFixture) =
             | _ -> box <| NoSpecimen()
 
 let fsFixture =
-    let f = Fixture() :> IFixture
+    let f = Fixture()
 
     f.Customizations.Add(FSharpSpecimenBuilder f)
-    f 
+    f :> IFixture
 
 /// Create a random value.
 /// In many cases, you don't need to explicitly provide the type argument, which can improve readability
