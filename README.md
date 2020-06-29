@@ -21,9 +21,9 @@ Can be inserted onto any existing `IFixture` by doing the following
 
 ```fsharp
 let fixture = Fixture()
-...
+//...
 
-fixture.Customizations.Add(FSharpSpecimenBuilder fixture)
+fixture.Customizations.Add(FSharpSpecimenBuilder(fixture))
 ```
 
 ### `fsFixture`
