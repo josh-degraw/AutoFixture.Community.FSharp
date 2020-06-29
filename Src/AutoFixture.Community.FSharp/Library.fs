@@ -16,10 +16,10 @@ type FSharpSpecimenBuilder(fixture: IFixture) =
             | _ -> box <| NoSpecimen()
 
 let fsFixture =
-    let f = Fixture()
+    let f = Fixture() :> IFixture
 
     f.Customizations.Add(FSharpSpecimenBuilder f)
-    f :> IFixture
+    f 
 
 /// Create a random value.
 /// In many cases, you don't need to explicitly provide the type argument, which can improve readability
@@ -27,8 +27,8 @@ let inline randVal<'a> () = fsFixture.Create<'a>()
 
 /// Create a sequence of random values.
 /// In many cases, you don't need to explicitly provide the type argument, which can improve readability
-let inline randVals<'a> () = fsFixture.CreateMany<'a>()
+let inline randVals<'a>  () : 'a seq = fsFixture.CreateMany<'a>()
 
 /// Create a sequence of n random values.
 /// In many cases, you don't need to explicitly provide the type argument, which can improve readability
-let inline randValsN<'a> n = fsFixture.CreateMany<'a>(n)
+let inline randValsN<'a> n : 'a seq = fsFixture.CreateMany<'a>(n)

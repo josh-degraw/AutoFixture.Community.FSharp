@@ -6,3 +6,5 @@ riderModule.iml
 .idea/
 .vs/
 *.DotSettings.user
+
+.ionide/

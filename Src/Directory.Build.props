@@ -1,22 +1,35 @@
 
 <Project>
     <PropertyGroup>
-        <Version>1.0.0-rc</Version>
-        <TargetFramework>netstandard2.0</TargetFramework>
-        <Authors>Josh DeGraw</Authors>
+        <Deterministic>true</Deterministic>  
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
+        <PublishRepositoryUrl>true</PublishRepositoryUrl>
+        <IncludeSymbols>true</IncludeSymbols>
+        <EmbedUntrackedSources>true</EmbedUntrackedSources>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+    </PropertyGroup>
+    
+    <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
+        <ContinuousIntegrationBuild>true</ContinuousIntegrationBuild>
+    </PropertyGroup>
+    
+    <PropertyGroup>
+        <Version>1.0.0-rc</Version>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <Authors>Josh DeGraw</Authors>        
+        <Copyright>© 2020</Copyright>
         <PackageTags>AutoFixture fsharp</PackageTags>
         <RepositoryType>git</RepositoryType>
         <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
         <RepositoryUrl>https://github.com/josh-degraw/AutoFixture.Community.FSharp</RepositoryUrl>
         <PackageProjectUrl>https://github.com/josh-degraw/AutoFixture.Community.FSharp</PackageProjectUrl>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
-
+        <NeutralLanguage>en-US</NeutralLanguage>
     </PropertyGroup>
     
     <ItemGroup>
         <PackageReference Include="AutoFixture" Version="4.11.0" />
+        <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All"/>
     </ItemGroup>
 </Project>
