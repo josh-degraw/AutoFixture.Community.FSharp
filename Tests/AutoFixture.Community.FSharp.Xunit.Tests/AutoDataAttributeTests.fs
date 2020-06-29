@@ -1,6 +1,6 @@
-﻿module AutoFixture.Extensions.FSharp.Xunit.Tests
+﻿module AutoFixture.Community.FSharp.Xunit.Tests
 
-open AutoFixture.Extensions.FSharp
+open AutoFixture.Community.FSharp
 open FsUnit.Xunit
 open Xunit
 

@@ -1,8 +1,8 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
     
     <PropertyGroup>
-        <PackageId>AutoFixture.Extensions.FSharp.Xunit</PackageId>
-        <AssemblyName>AutoFixture.Extensions.FSharp.Xunit</AssemblyName>
+        <PackageId>AutoFixture.Community.FSharp.Xunit</PackageId>
+        <PackageTags>$(PackageTags) xunit</PackageTags>
         <Description>Helpful extensions to AutoFixture.Xunit to handle some F#-specific types when supplying auto-data in test functions.</Description>
     </PropertyGroup>
     
@@ -15,7 +15,7 @@
     </ItemGroup>
 
     <ItemGroup>
-      <ProjectReference Include="..\AutoFixture.Extensions.FSharp\AutoFixture.Extensions.FSharp.fsproj" />
+      <ProjectReference Include="..\AutoFixture.Community.FSharp\AutoFixture.Community.FSharp.fsproj" />
     </ItemGroup>
 
 </Project>

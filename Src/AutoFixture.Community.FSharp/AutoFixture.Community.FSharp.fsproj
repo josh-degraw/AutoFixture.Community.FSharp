@@ -1,8 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <PackageId>AutoFixture.Extensions.FSharp</PackageId>
-        <AssemblyName>AutoFixture.Extensions.FSharp</AssemblyName>
+        <PackageId>AutoFixture.Community.FSharp</PackageId>
         <Description>Helpful extensions to AutoFixture to handle some F#-specific types.</Description>
     </PropertyGroup>
     

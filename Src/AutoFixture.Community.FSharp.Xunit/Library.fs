@@ -1,4 +1,4 @@
-﻿namespace AutoFixture.Extensions.FSharp
+﻿namespace AutoFixture.Community.FSharp
 open System
 open AutoFixture.Xunit2
 

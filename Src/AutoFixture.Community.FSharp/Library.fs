@@ -1,4 +1,4 @@
-﻿module AutoFixture.Extensions.FSharp
+﻿module AutoFixture.Community.FSharp
 
 open AutoFixture
 open AutoFixture.Kernel

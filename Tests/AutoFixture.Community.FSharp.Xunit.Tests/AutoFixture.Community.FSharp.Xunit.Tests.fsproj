@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+    <ItemGroup>
+        <Compile Include="AutoDataAttributeTests.fs" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\..\Src\AutoFixture.Community.FSharp.Xunit\AutoFixture.Community.FSharp.Xunit.fsproj" />
+        <ProjectReference Include="..\..\Src\AutoFixture.Community.FSharp\AutoFixture.Community.FSharp.fsproj" />
+    </ItemGroup>
+
+</Project>

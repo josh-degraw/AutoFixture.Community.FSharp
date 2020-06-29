@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Tests", "Tests\AutoFixture.Extensions.FSharp.Tests\AutoFixture.Extensions.FSharp.Tests.fsproj", "{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Community.FSharp.Tests", "Tests\AutoFixture.Community.FSharp.Tests\AutoFixture.Community.FSharp.Tests.fsproj", "{D21483A3-A76E-4E01-9065-0B39CB4BEEFD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{19D15003-520B-46A5-A052-616A68B42523}"
 ProjectSection(SolutionItems) = preProject
@@ -12,11 +12,16 @@ ProjectSection(SolutionItems) = preProject
 	Src\Directory.Build.props = Src\Directory.Build.props
 EndProjectSection
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Xunit.Tests", "Tests\AutoFixture.Extensions.FSharp.Xunit.Tests\AutoFixture.Extensions.FSharp.Xunit.Tests.fsproj", "{922DD3A6-77D2-4E1C-A498-6B5995375C67}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Community.FSharp.Xunit.Tests", "Tests\AutoFixture.Community.FSharp.Xunit.Tests\AutoFixture.Community.FSharp.Xunit.Tests.fsproj", "{922DD3A6-77D2-4E1C-A498-6B5995375C67}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp", "Src\AutoFixture.Extensions.FSharp\AutoFixture.Extensions.FSharp.fsproj", "{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Community.FSharp", "Src\AutoFixture.Community.FSharp\AutoFixture.Community.FSharp.fsproj", "{50740F53-C12B-46A7-AB54-5B8BB0FC1E9D}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Extensions.FSharp.Xunit", "Src\AutoFixture.Extensions.FSharp.Xunit\AutoFixture.Extensions.FSharp.Xunit.fsproj", "{D94241F0-E831-4165-BB5C-EA1114BF20A5}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "AutoFixture.Community.FSharp.Xunit", "Src\AutoFixture.Community.FSharp.Xunit\AutoFixture.Community.FSharp.Xunit.fsproj", "{D94241F0-E831-4165-BB5C-EA1114BF20A5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{66D361DE-B169-4C92-A10D-932E78279986}"
+ProjectSection(SolutionItems) = preProject
+	README.md = README.md
+EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

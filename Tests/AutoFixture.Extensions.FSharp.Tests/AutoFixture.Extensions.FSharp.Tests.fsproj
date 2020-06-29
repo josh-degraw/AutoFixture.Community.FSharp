@@ -1,9 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-    <ItemGroup>
-        <Compile Include="Tests.fs"/>
-    </ItemGroup>
-
-    <ItemGroup>
-        <ProjectReference Include="..\..\Src\AutoFixture.Extensions.FSharp\AutoFixture.Extensions.FSharp.fsproj"/>
-    </ItemGroup>
-</Project>
