@@ -4,6 +4,16 @@
         <Version>1.0.0</Version>
         <TargetFramework>netstandard2.0</TargetFramework>
         <Authors>Josh DeGraw</Authors>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <RepositoryType>git</RepositoryType>
+        <RepositoryRoot>$(MSBuildThisFileDirectory)</RepositoryRoot>
+        <RepositoryUrl>https://github.com/josh-degraw/AutoFixture.Extensions.FSharp</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/josh-degraw/AutoFixture.Extensions.FSharp</PackageProjectUrl>
+        <PackageLicenseExpression>MIT</PackageLicenseExpression>
+        <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
     </PropertyGroup>
     
     <ItemGroup>
