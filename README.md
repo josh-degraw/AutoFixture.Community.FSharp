@@ -1,6 +1,6 @@
 # AutoFixture.Community.FSharp
 
-![Build](https://github.com/josh-degraw/AutoFixture.Community.FSharp/workflows/Build%20&%20Test/badge.svg)
+![Build](https://github.com/josh-degraw/AutoFixture.Community.FSharp/workflows/Build/badge.svg)
 
 | Package | Version |
 | ------- | ------- |
