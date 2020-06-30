@@ -1,5 +1,7 @@
 # AutoFixture.Community.FSharp
 
+![Build](https://github.com/josh-degraw/AutoFixture.Community.FSharp/workflows/Build%20&%20Test/badge.svg)
+
 | Package | Version |
 | ------- | ------- |
 | AutoFixture.Community.FSharp       | [![AutoFixture.Community.FSharp](https://img.shields.io/nuget/v/AutoFixture.Community.FSharp)](https://www.nuget.org/packages/AutoFixture.Community.FSharp)            |
