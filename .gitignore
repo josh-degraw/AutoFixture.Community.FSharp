@@ -6,5 +6,5 @@ riderModule.iml
 .idea/
 .vs/
 *.DotSettings.user
-
+nuget.config
 .ionide/
