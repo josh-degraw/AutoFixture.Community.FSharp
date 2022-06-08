@@ -2,10 +2,10 @@
 
 ![Build](https://github.com/josh-degraw/AutoFixture.Community.FSharp/workflows/Build/badge.svg)
 
-| Package | Version |
-| ------- | ------- |
-| AutoFixture.Community.FSharp       | [![AutoFixture.Community.FSharp](https://img.shields.io/nuget/v/AutoFixture.Community.FSharp)](https://www.nuget.org/packages/AutoFixture.Community.FSharp)            |
-| AutoFixture.Community.FSharp.Xunit | [![AutoFixture.Community.FSharp.Xunit](https://img.shields.io/nuget/v/AutoFixture.Community.FSharp.Xunit)](https://www.nuget.org/packages/AutoFixture.Community.FSharp.Xunit) |
+| Package | Version | Downloads |
+| ------- | ------- | --------- |
+| AutoFixture.Community.FSharp       | [![AutoFixture.Community.FSharp](https://img.shields.io/nuget/v/AutoFixture.Community.FSharp)](https://www.nuget.org/packages/AutoFixture.Community.FSharp)            | [![Downloads](https://img.shields.io/nuget/dt/AutoFixture.Community.FSharp.svg)](https://www.nuget.org/packages/AutoFixture.Community.FSharp) |
+| AutoFixture.Community.FSharp.Xunit | [![AutoFixture.Community.FSharp.Xunit](https://img.shields.io/nuget/v/AutoFixture.Community.FSharp.Xunit)](https://www.nuget.org/packages/AutoFixture.Community.FSharp.Xunit) | [![Downloads](https://img.shields.io/nuget/dt/AutoFixture.Community.FSharp.Xunit.svg)](https://www.nuget.org/packages/AutoFixture.Community.FSharp.Xunit) |
 
 This is a small library that builds on top of [AutoFixture](https://github.com/AutoFixture/AutoFixture) to add support for F#-specific types.
 Specifically, the important additions that are't currently handled well with vanilla `AutoFixture` are:
