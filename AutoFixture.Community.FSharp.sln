@@ -23,6 +23,7 @@ ProjectSection(SolutionItems) = preProject
 	README.md = README.md
 	.github\workflows\dotnet-core.yml = .github\workflows\dotnet-core.yml
 	.editorconfig = .editorconfig
+	.config\dotnet-tools.json = .config\dotnet-tools.json
 EndProjectSection
 EndProject
 Global
