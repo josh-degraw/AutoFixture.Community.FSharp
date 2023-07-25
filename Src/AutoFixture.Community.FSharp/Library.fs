@@ -16,19 +16,42 @@ type FSharpSpecimenBuilder(fixture: IFixture) =
             | _ -> box <| NoSpecimen()
 
 let fsFixture =
-    let f = Fixture()
-
+    let f = Fixture() :> IFixture
     f.Customizations.Add(FSharpSpecimenBuilder f)
-    f :> IFixture
+    f
 
 /// Create a random value.
-/// In many cases, you don't need to explicitly provide the type argument, which can improve readability
 let inline randVal<'a> () = fsFixture.Create<'a>()
 
 /// Create a sequence of random values.
-/// In many cases, you don't need to explicitly provide the type argument, which can improve readability
 let inline randVals<'a>  () : 'a seq = fsFixture.CreateMany<'a>()
 
 /// Create a sequence of n random values.
-/// In many cases, you don't need to explicitly provide the type argument, which can improve readability
-let inline randValsN<'a> n : 'a seq = fsFixture.CreateMany<'a>(n)
+let inline randValsN<'a> n : 'a seq = fsFixture.CreateMany<'a> n
+
+/// Create a random value, ensuring that the provided predicate is not true for the generated value.
+let inline randValExceptWhere<'a> fn =
+    let mutable value = randVal<'a>()
+
+    while fn value do
+        value <- randVal<'a>()
+    value
+
+/// Create a random value, ensuring that the provided value is never what is generated.
+let inline randValExcept<'a when 'a : equality> x =
+    randValExceptWhere ((=) x)
+
+/// Create an infinite sequence of random values, ensuring that the provided predicate is not true for any of the generated values.
+let inline randValsExceptWhere<'a> fn =
+    Seq.initInfinite (fun _ -> randValExceptWhere<'a> fn)
+
+/// Create an infinite sequence of random values, ensuring that the provided value is never what is generated.
+let inline randValsExcept<'a when 'a : equality> x = randValsExceptWhere<'a> ((=) x)
+
+/// Create a finite sequence of n random values, ensuring that the provided predicate is not true for any of the generated values.
+let inline randValsNExceptWhere<'a> n fn =
+    randValsExceptWhere<'a> fn
+    |> Seq.take n
+
+/// Create a finite sequence of n random values, ensuring that the provided value is never what is generated.
+let inline randValsNExcept<'a when 'a : equality> n x = randValsNExceptWhere<'a> n ((=) x)
