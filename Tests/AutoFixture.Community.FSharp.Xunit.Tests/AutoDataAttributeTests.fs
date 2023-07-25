@@ -4,19 +4,15 @@ open AutoFixture.Community.FSharp
 open FsUnit.Xunit
 open Xunit
 
-type SimpleRecordType = {
-    MyInt : int
-    MyString: string
-}
+type SimpleRecordType = { MyInt: int; MyString: string }
 let throwAny = throw typeof<System.Exception>
 
 [<Theory; AutoDataFSharp>]
 let ``Can populate test function with a single record type`` (record: SimpleRecordType) =
-    record
-    |> should not' (be Null)
-    
+    record |> should not' (be Null)
+
 type ComplexRecordType = {
-    MyInt : int
+    MyInt: int
     MyString: string
     MyOption: int option
     MyOtherRecord: SimpleRecordType
@@ -25,20 +21,21 @@ type ComplexRecordType = {
 
 [<Theory; AutoDataFSharp>]
 let ``Can populate test function with a complex record type`` (record: ComplexRecordType) =
-    record
-    |> should not' (be Null)
-    
+    record |> should not' (be Null)
+
 [<Theory; AutoDataFSharp>]
 let ``Can populate test function with a tuple argument`` (myInt: int, myString: string) =
     myInt |> should be (greaterThan 0)
     myString |> should not' (be NullOrEmptyString)
-    
-        
+
 [<Theory; AutoDataFSharp>]
-let ``Can populate test function with a tuple argument including a record type`` (myInt: int, myRecord: ComplexRecordType) =
+let ``Can populate test function with a tuple argument including a record type``
+    (
+        myInt: int,
+        myRecord: ComplexRecordType
+    ) =
     myInt |> should be (greaterThan 0)
     myRecord |> should not' (be Null)
-    
 
 [<Theory; AutoDataFSharp>]
 let ``Can populate a test function with curried arguments`` (myInt: int) (myString: string) =
@@ -46,10 +43,12 @@ let ``Can populate a test function with curried arguments`` (myInt: int) (myStri
     myString |> should not' (be NullOrEmptyString)
 
 [<Theory; AutoDataFSharp>]
-let ``Can populate test function with curried arguments including a record type`` (myInt: int) (myRecord: ComplexRecordType) =
+let ``Can populate test function with curried arguments including a record type``
+    (myInt: int)
+    (myRecord: ComplexRecordType)
+    =
     myInt |> should be (greaterThan 0)
     myRecord |> should not' (be Null)
-
 
 [<Theory; AutoDataFSharp>]
 let ``Can populate test function with curried arguments including a record type and tuples``
@@ -60,10 +59,10 @@ let ``Can populate test function with curried arguments including a record type 
     myInt |> should be (greaterThan 0)
     myRecord |> should not' (be Null)
     myTuple |> should not' (be Null)
-    
-    let (_, _)= myTuple
+
+    let (_, _) = myTuple
     ()
-   
+
 [<Theory>]
 [<InlineAutoDataFSharp(2)>]
 let ``Can populate some items from InlineAutoData attribute`` (number: int) (dto: ComplexRecordType) =
