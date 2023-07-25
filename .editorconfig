@@ -15,6 +15,6 @@ fsharp_space_before_member = true
 fsharp_record_multiline_formatter = character_width
 fsharp_max_array_or_list_number_of_items = 3
 fsharp_array_or_list_multiline_formatter = number_of_items
-fsharp_max_function_binding_width = 1
 fsharp_multiline_bracket_style = stroustrup
 fsharp_newline_between_type_definition_and_members = false
+fsharp_keep_max_number_of_blank_lines = 1
